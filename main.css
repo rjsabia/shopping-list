@@ -6,15 +6,15 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #00042b;
   border: solid 6px #00ffff;
-  border-left: solid 50px #00ffff;
-  border-right: solid 50px #00ffff;
+  border-left: solid 40px #00ffff;
+  border-right: solid 40px #00ffff;
 }
 input{
   border-radius: 2px;
   border: solid 2px #00ffff;
   background-color: #175a95;
   color: #00ffff;
-  width: 300px;
+  width: 225px;
 }
 
 button, input[type="text"] {
@@ -24,7 +24,7 @@ button{
   border-radius: 10px;
   border: solid 2px #00ffff;
   color: #00ffff;
-  animation: glowing 1500ms infinite;
+  animation: glowing 2500ms infinite;
 }
 button:hover {
   cursor: pointer;
@@ -55,9 +55,16 @@ button:hover {
 .shopping-list > li {
   margin-bottom: 20px;
   border: 2px solid #00ffff;
-  border-left: 15px solid #00ffff;
+  border-left: 25px solid #00ffff;
   border-radius: 2px;
   padding: 20px;
+  width: 400px;
+  animation: glo-block 4500ms infinite;
+}
+@keyframes glo-block {
+  0% { background-color: #003380; box-shadow: 0 0 3px #003380; }
+  50% { background-color: #002966; box-shadow: 0 0 40px #002966; }
+  100% { background-color: #001f4d; box-shadow: 0 0 3px #001f2d; }
 }
 
 .shopping-item {
