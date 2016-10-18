@@ -4,14 +4,34 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #00042b;
+}
+input{
+  border-radius: 2px;
+  border: solid 2px #00ffff;
+  background-color: #175a95;
+  color: #00ffff;
 }
 
 button, input[type="text"] {
   padding: 5px;
 }
-
+button{
+  border-radius: 10px;
+  border: solid 2px #00ffff;
+  color: #00ffff;
+  animation: glowing 1500ms infinite;
+}
 button:hover {
   cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #0cff00;
+}
+@keyframes glowing {
+  0% { background-color: #004a7f; box-shadow: 0 0 3px #004a7f; }
+  50% { background-color: #0068b2; box-shadow: 0 0 40px #0068b2; }
+  100% { background-color: #0077cc; box-shadow: 0 0 3px #0077cc; }
 }
 
 #shopping-list-item {
@@ -21,8 +41,8 @@ button:hover {
 .container {
   max-width: 600px;
   margin: 0 auto;
+  color: #00ffff;
 }
-
 .shopping-list {
   list-style: none;
   padding-left: 0;
@@ -30,13 +50,15 @@ button:hover {
 
 .shopping-list > li {
   margin-bottom: 20px;
-  border: 1px solid grey;
+  border: 2px solid #00ffff;
+  border-left: 15px solid #00ffff;
+  border-radius: 2px;
   padding: 20px;
 }
 
 .shopping-item {
   display: block;
-  color: grey;
+  color: #00ffff;
   font-style: italic;
   font-size: 20px;
   margin-bottom: 15px;
